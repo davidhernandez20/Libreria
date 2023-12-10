@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="libreria.css">
+    <link rel="import" href="promociones.html">
+</head>
+<body>
+    <nav class="barra-navegacion">
+        <img class="libro" src="/mi pagina web/img/icons8-libro-abierto-100.png" alt="imagen_libro">
+        <a href="#">Inicio</a>
+        <a id="promociones" href="promociones.html">Promociones</a>
+        <a href="#">Colecciones</a>
+        <a href="#">Recomendaciones</a>
+        <a href="#">Novedades</a>
+        <input type="search" placeholder="Buscar">
+      <div class="boton-carrito">
+        <button  type="button"><img class="carrito" src="/mi pagina web/img/icons8-carrito-de-compras-48.png" alt="imagen_carrito_compras"></button>
+      </div>
+    </nav>
+    <div class="principal">
+        <img src="/libreria/IMG-20231206-WA0009.jpg" alt="imagen">
+        <h1>¡REGALA UN LIBRO!</h1>
+        <P>Accede a nuestros recomendados del autor y encontrarás una amplia selección de libros para regalar a tus seres queridos</P>
+        <a class="ir" href="#">Ir</a>
+    </div>
+    <div class="barra-lateral">
+        <h3>Filtrar por:</h3>
+        <select name="categorias" id="categorias">
+            <option value="">categorias</option>
+        </select>
+        <select name="generos" id="generos">
+            <option value=""disabled selected>generos</option>
+            <option value="">hombre</option>
+        </select>
+        <select name="precios" id="precios">
+            <option value="">precios</option>
+        </select>
+        <select name="orden" id="orden">
+            <option value="">orden</option>
+        </select>
+        <button type="button">Limpiar filtros</button>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <div class="img_liberia">
+        <img src="/libreria/Captura de pantalla (85).png" class="card-img-top" alt="imagenc">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">LOS NIÑOS DEL AMAZONAS</h5>
+          <p class="card-text">Daniel Alonzo Coronel Castañeda</p>
+        <div class="imagen-carro">
+          <a href="#" class="btn btn-primary"><img src="/mi pagina web/img/icons8-carrito-de-compras-48.png"></a>
+        </div>
+        <div class="imagen-vista">  <!-- carrito compras -->
+          <a href="#" class="btn btn-primary"><img src="/libreria/icons8-oftalmología-100.png"></a>
+        </div>
+      <div class="precio">
+        <p>$53.000</p>
+      </div>
+        </div>
+      </div>
+      <div class="card-uno" style="width: 18rem;">
+      <div class="img_liberia-dos">
+        <img src="/libreria/a40a815e67cad341b629efaaae0c4957.webp" class="card-img-top" alt="imagenc">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">LA COSTA NOSTRA</h5>
+          <p class="card-text">Laura Ardila Arrieta</p>
+        <div class="imagen-carro">
+          <a href="#" class="btn btn-primary"><img src="/mi pagina web/img/icons8-carrito-de-compras-48.png"></a>
+        </div>
+        <div class="imagen-vista">  <!-- carrito compras -->
+          <a href="#" class="btn btn-primary"><img src="/libreria/icons8-oftalmología-100.png"></a>
+        </div>
+        <div class="precio">
+          <p>$80.000</p>
+        </div>  <!-- vista -->
+        </div>
+      </div>
+      <div class="card-dos" style="width: 18rem;">
+        <div class="img_liberia-tres">
+        <img src="/libreria/1a1a5e6d7f59db006b8e98bf7e7d6157.webp" class="card-img-top" alt="imagenc">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">TIEMPOS RECIOS</h5>
+          <p class="card-text">Mario Vargas Lloza</p>
+          <div class="imagen-carro">
+          <a href="#" class="btn btn-primary"><img src="/mi pagina web/img/icons8-carrito-de-compras-48.png"></a>
+        </div>
+        <div class="imagen-vista">  <!-- carrito compras -->
+          <a href="#" class="btn btn-primary"><img src="/libreria/icons8-oftalmología-100.png"></a>
+        </div>
+        <div class="precio">
+          <p>$82.000</p>
+        </div>
+        </div>
+      </div>
+      <script src="promociones.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones</title>
+    <link rel="stylesheet" href="promociones.css">
+</head>
+<body>
+    <nav class="barra-navegacion">
+        <img class="libro" src="/mi pagina web/img/icons8-libro-abierto-100.png" alt="imagen_libro">
+        <a id="inicio" href="libreria.html">Inicio</a>
+        <a href="#">Promociones</a>
+        <a href="#">Colecciones</a>
+        <a href="#">Recomendaciones</a>
+        <a href="#">Novedades</a>
+        <input type="search" placeholder="Buscar">
+      <div class="boton-carrito">
+        <button  type="button"><img class="carrito" src="/mi pagina web/img/icons8-carrito-de-compras-48.png" alt="imagen_carrito_compras"></button>
+      </div>
+    </nav>
+    <div class="principal">
+        <img src="/libreria/—Pngtree—orange yellow eye-catching supermarket promotion_1191097.jpg" alt="imagen">
+        <h1>PROMOCIONES</h1>
+        <P>Aqui encontraras las mejores ofertas y descuentos en libros de todos los generos, para todos los gustos, edades y presupuestos.</P>
+    </div>
+        <div class="container">
+            <div class="barra-lateral">
+                <h3>Filtrar por:</h3>
+                <select name="año" id="AÑO">
+                    <option value="disabled selected">Año</option>
+                </select>
+                <select name="generos" id="generos">
+                    <option value="">Generos</option>
+                    <option value="">Aventura</option>
+                    <option value="">Accion</option>
+                    <option value="">Romance</option>
+                </select>
+                <select name="precios" id="precios">
+                    <option value="">Precios</option>
+                </select>
+                </select>
+                <button type="button">Limpiar filtros</button>
+            </div>
+            <div class="cuadro-uno">
+                <h3 class="titulo-uno">1980 - 1990</h3>
+                <a class="uno" href="#" class="abrir"onclick="abrirModal()">Al otro lado</a>
+                <a class="uno" href="#">Carrusel</a>
+                <a class="uno" href="#">El accidente</a>
+                <a class="uno" href="#">Gran via</a>
+                <a class="uno" href="#">El catalejo</a>
+                <a class="uno" href="#">otro libro</a>
+                <a class="uno" href="#">otro libro</a>
+                <a class="uno" href="#">otro libro</a>
+                <a class="uno" href="#">otro libro</a>
+                <a class="uno" href="#">otro libro</a>
+            </div>
+            <div class="cuadro-dos">
+                <h3 class="titulo-dos">1990 - 2010</h3>
+                <a class="uno" href="#">El chico nuevo</a>
+                <a class="uno" href="#">Antología básica</a>
+                <a class="uno" href="#">A Horcajadas</a>
+                <a class="uno" href="#">Vida en el amor</a>
+                <a class="uno" href="#">¿Recién casados?</a>
+                <a class="uno" href="#">otro libro</a>
+                <a class="uno" href="#">otro libro</a>
+                <a class="uno" href="#">otro libro</a>
+                <a class="uno" href="#">otro libro</a>
+                <a class="uno" href="#">otro libro</a>
+            </div>
+            <div class="cuadro-tres">
+                <h3 class="titulo-tres">2010 - 2022</h3>
+                <a class="uno" href="#">1001 Perlas de yoga</a>
+                <a class="uno" href="#">#Enamorate</a>
+                <a class="uno" href="#">Crema paraíso</a>
+                <a class="uno" href="#">El mal dormir</a>
+                <a class="uno" href="#">Justo antes del final</a>
+                <a class="uno" href="#">otro libro</a>
+                <a class="uno" href="#">otro libro</a>
+                <a class="uno" href="#">otro libro</a>
+                <a class="uno" href="#">otro libro</a>
+                <a class="uno" href="#">otro libro</a>
+            </div>
+        </div>
+        <section id="modal" class="modal">
+            <div class="modal-container">
+              <img src="/libreria/9788466303477.png" alt="x" class="modal-img">
+              <h2 class="modal-titulo">Al otro lado</h2>
+              <p class="modal-parrafo">las complicadas relaciones entre los miembros de una singular familia, marcada por el misterio y la muerte, se en cargaran de forma magistral en silvia. personaje que articula este texto y perfecta personificacion del "angel de la muerte". Entorno a esta singular figura femenina Maria Mayoral desarrolla un intenso drama mostrando las claves de una forma de narrar historias que le ha proporcionado el favor de un amplio sector del publico.</p>
+              <a href="#" class="cerrar"onclick="cerrarModal()">x</a>
+            </div>
+          </section>
+</body>
+<script src="promociones.js"></script>
+</html>

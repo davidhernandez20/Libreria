@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap');
+
+
+:root{
+    --color-primario: black;
+    --color-secundario: white;
+}
+
+/* adapatacion a modo oscuro*/
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --color-primerio: white;
+        --color-secundario: black;
+    }
+}
+
+/*reseteamos los margin y pading de todas las etiquetas de html*/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align:baseline;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* evitamos problemas en las imagenes*/
+
+img , picture , video , iframe , figure{
+    max-width: 100%;
+    width: 100%;
+    display:block;
+    object-fit: cover;
+    object-position: center center;
+} 
+
+/* receteamos los enlaces para que funcionen como cajas*/
+
+a{
+    display: block;
+}
+
+/* excepto las que se encuentren en parrafos*/
+
+p a{
+    display: inline;
+}
+
+/* quitamos los puntos de las li*/
+
+li{
+    list-style-type: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* desactivamos estilos por defecto de las principales etiquetas de tecto*/
+
+h1 , h2 , h3 , h4 , h5 , h6 , p , span , a , strong , blockquote , i , b , u , em{
+    font-size: 1.3em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color:inherit;
+}
+
+/* nivelamos problemas de tipografia y problemas con los formularios*/
+/* 
+form , input , textarea , select , button , label{
+    font-family: inherit;
+    hyphens: auto;
+    display: block;
+    color: inherit;
+    
+} */
+
+
+/* reseteamos las tablas*/
+
+table , tr , td{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.libro{
+    position: absolute;
+    width: 6%;
+    left: -10%;
+    top: -75%;
+}
+
+
+.barra-navegacion{
+    display:flex;
+    gap: 50px;
+    position: absolute;
+    left: 16%;
+    top: 8%;
+}
+
+.barra-navegacion a{
+    color: rgb(5, 5, 5);
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.barra-navegacion a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(245, 6, 6);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition:transform 0.8s ease-out;
+}
+
+.barra-navegacion a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.principal img{
+    height: inherit;
+    border-radius: 35px
+}
+
+.principal{
+    position: relative;
+    height: 250px;
+    background-color: aqua;
+    left: 12%;
+    margin-top: 8%;
+    width: 66%;
+    display: grid;
+    place-items:center;
+    border-radius: 35px;    
+}
+
+h1{
+    position: absolute;
+    top: 6%;
+    color:rgb(19, 18, 18);
+}
+p{
+    position: absolute;
+    top: 35%;
+    width:55%;
+    color: rgb(15, 15, 15);
+    text-align: center;
+}
+
+input{
+    margin-top: -1%;
+    width: 95%;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    width: 68%;
+    height: 50%;
+    left: 10%;
+    border-radius: 35px;
+}
+
+.cuadro-uno{
+    display:inline-block;
+    margin-top: 1%;
+    padding: 8px;
+    width: 18%;
+    height: 200px;
+    overflow-y: scroll;
+    border: 3px solid rgb(146, 146, 146);
+    border-radius: 10px;
+}
+
+.cuadro-uno::-webkit-scrollbar{
+    width: 10px;
+}
+
+.cuadro-uno::-webkit-scrollbar-thumb{
+    background-color: rgb(245, 149, 6);
+    border-radius: 35px;
+}
+
+.cuadro-uno::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+}
+
+.titulo-uno{
+    margin-bottom: 10%;
+    text-align: center;
+    color: rgb(170, 168, 168);
+}
+
+.container .uno{
+    font-size: 1em;
+    margin-bottom:8px;
+    cursor: pointer;
+    background-color: white;
+    color:grey;
+    border-radius: 30px;
+    transition: background-color .3s;
+}
+
+.container .uno:hover{
+    background-color: grey;
+    color: white;
+    transform: scale(1.05);
+}
+
+.cuadro-dos{
+    display:inline-block;
+    margin-top: 1%;
+    padding: 8px;
+    width: 18%;
+    height: 200px;
+    overflow-y: scroll;
+    border: 3px solid rgb(146, 146, 146);
+    border-radius: 10px;
+}
+
+
+
+.titulo-dos{
+    margin-bottom: 10%;
+    text-align: center;
+    color: rgb(170, 168, 168);
+}
+
+.cuadro-tres{
+    display:inline-block;
+    margin-top: 1%;
+    padding: 8px;
+    width: 18%;
+    height: 200px;
+    overflow-y: scroll;
+    border: 3px solid rgb(146, 146, 146);
+    border-radius: 10px;
+}
+
+
+
+.titulo-tres{
+    margin-bottom: 10%;
+    text-align: center;
+    color: rgb(170, 168, 168);
+}
+
+.boton-carrito{
+    margin-top: -2%;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 25%;
+    height: 25%;
+    cursor: pointer;
+}
+
+.barra-lateral{
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 10%;
+    height: 35%;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.barra-lateral h3{
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+
+
+
+.barra-lateral select{
+    background-color: transparent;
+    font-size: 1em;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.barra-lateral button{
+    background-color: rgb(196, 190, 190);
+    font-size: 0.8em;
+    margin-top:30px;
+    border-radius: 10px;
+    margin-left: 15px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+
+
+/* MODAL */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    display: none;
+}  
+
+.modal-container{
+    margin: auto;
+    width: 50%;
+    height: 70%;
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding: 3em 2.5em;
+    gap: 1.5em;
+}
+
+.modal-titulo{
+    position: absolute;
+    margin-top: -25%;
+    margin-left: 18%;
+    font-size: 2.5rem;
+}
+
+.modal-parrafo{
+    margin-bottom: 10px;
+    text-align: justify;
+    width: 29%;
+    margin-top: -10%;
+    margin-left: 15%;
+}
+
+.modal-img{
+    width: 100%;
+    max-width: 230px;
+}
+
+.cerrar{
+    display: inline-block;
+    position: absolute;
+    margin-top: -25%;
+    margin-left: 42%;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgba(136, 131, 131, 0.548);
+    padding: 0.8em;
+    border: 1px solid;
+    border-radius: 30%;
+    transition: background-color .3s;
+}
+
+.modal .cerrar:hover{
+    background-color: white; /* Cambia el color al pasar el mouse por encima */
+    transform: scale(1.05); /* Escala el botón al pasar el mouse por encima */
+    color: black;
+    border: transparent;
+}   

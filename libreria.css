@@ -1,0 +1,318 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap');
+
+
+:root{
+    --color-primario: black;
+    --color-secundario: white;
+}
+
+/* adapatacion a modo oscuro*/
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --color-primerio: white;
+        --color-secundario: black;
+    }
+}
+
+/*reseteamos los margin y pading de todas las etiquetas de html*/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align:baseline;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* evitamos problemas en las imagenes*/
+
+img , picture , video , iframe , figure{
+    max-width: 100%;
+    width: 100%;
+    display:block;
+    object-fit: cover;
+    object-position: center center;
+} 
+
+/* receteamos los enlaces para que funcionen como cajas*/
+
+a{
+    display: block;
+}
+
+/* excepto las que se encuentren en parrafos*/
+
+p a{
+    display: inline;
+}
+
+/* quitamos los puntos de las li*/
+
+li{
+    list-style-type: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* desactivamos estilos por defecto de las principales etiquetas de tecto*/
+
+h1 , h2 , h3 , h4 , h5 , h6 , p , span , a , strong , blockquote , i , b , u , em{
+    font-size: 1.3em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color:inherit;
+}
+
+/* nivelamos problemas de tipografia y problemas con los formularios*/
+/* 
+form , input , textarea , select , button , label{
+    font-family: inherit;
+    hyphens: auto;
+    display: block;
+    color: inherit;
+    
+} */
+
+
+/* reseteamos las tablas*/
+
+table , tr , td{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.libro{
+    position: absolute;
+    width: 6%;
+    left: -10%;
+    top: -75%;
+}
+
+
+.barra-navegacion{
+    display:flex;
+    gap: 50px;
+    position: absolute;
+    left: 15%;
+    top: 8%;
+}
+
+.barra-navegacion a{
+    color: rgb(5, 5, 5);
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.barra-navegacion a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(245, 6, 6);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition:transform 0.8s ease-out;
+}
+
+.barra-navegacion a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.principal img{
+    height: inherit;
+    border-radius: 35px
+}
+
+.principal{
+    position: relative;
+    height: 250px;
+    background-color: aqua;
+    left: 12%;
+    margin-top: 8%;
+    width: 66%;
+    display: grid;
+    place-items:center;
+    border-radius: 35px;    
+}
+
+h1{
+    position: absolute;
+    top: 6%;
+    color:rgb(19, 18, 18);
+}
+p{
+    position: absolute;
+    top: 35%;
+    width:55%;
+    color: rgb(15, 15, 15);
+    text-align: center;
+}
+.ir{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    background-color: transparent;
+    color: rgb(20, 19, 19);
+    cursor: pointer;
+}
+
+input{
+    margin-top: -1%;
+    width: 95%;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.boton-carrito{
+    margin-top: -2%;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 25%;
+    height: 25%;
+    cursor: pointer;
+}
+
+.barra-lateral{
+    position: absolute;
+    left: 10%;
+    margin-top: 2%;
+    width: 10%;
+    height: 30%;
+    background-color:white;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+h3{
+    margin-bottom: 10%;
+}
+
+.barra-lateral select{
+    background-color: transparent;
+    font-size: 1em;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.barra-lateral button{
+    background-color: rgb(196, 190, 190);
+    font-size: 0.8em;
+    margin-top:30px;
+    border-radius: 10px;
+    margin-left: 15px;
+    padding: 2px;
+    cursor: pointer;
+}
+.card{
+    background-color:rgb(207, 203, 203);
+    position: absolute;
+    display:inline-block;
+    margin-top:30px;
+    border-radius: 35px;
+    width: 86%;
+    height: 48%;
+    left: 20%;
+}
+.card img{
+    height: 60%;
+    background-image: none;
+    background-repeat: no-repeat;
+    background: center;
+
+}
+
+
+.card-uno{
+    background-color:rgb(207, 203, 203);
+    position: absolute;
+    display:inline-block;
+    margin-top:30px;
+    border-radius: 35px;
+    width: 86%;
+    height: 48%;
+    left: 40%;
+}
+
+.card-dos{
+    background-color:rgb(207, 203, 203);
+    position: absolute;
+    display:inline-block;
+    margin-top:30px;
+    border-radius: 35px;
+    width: 86%;
+    height: 48%;
+    left: 60%;
+}
+
+.img_liberia{
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 70px;
+    border: 10px solid rgb(71, 71, 228);
+}
+
+.card-title{
+    text-align: center;
+    font-size: 1em;
+    margin-top: 5%;
+}
+
+.card-text{
+    position: absolute;
+    text-align: center;
+    font-size: 0.8em;
+    top: 64%;
+    left: 23%;
+}
+
+.imagen-carro{
+    position: absolute;
+    width: 12%;
+    top: 85%;
+    left: 30%;
+}
+
+.imagen-vista{
+    position: absolute;
+    width: 12%;
+    top:85%;
+    left: 55%;
+}
+
+.precio{
+    position: absolute;
+    text-align: center;
+    font-size: 1em;
+    left: 35%;
+    top: 74%;
+}
+
+.img_liberia-dos{
+    width: 125px;
+    margin-top: 20px;
+    margin-left: 85px;
+    border: 10px solid rgb(233, 21, 21);
+}
+
+.img_liberia-tres{
+    width: 119px;
+    margin-top: 20px;
+    margin-left: 85px;
+    border: 10px solid rgb(116, 3, 116);
+}
