@@ -238,7 +238,18 @@ input{
     border-radius: 10px;
 }
 
+.cuadro-dos::-webkit-scrollbar{
+    width: 10px;
+}
 
+.cuadro-dos::-webkit-scrollbar-thumb{
+    background-color: rgb(245, 149, 6);
+    border-radius: 35px;
+}
+
+.cuadro-dos::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+}
 
 .titulo-dos{
     margin-bottom: 10%;
